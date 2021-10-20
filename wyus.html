@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <style>
+            
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #227799;
+  margin: 0;
+}
+
+i{
+  color: #345f81;
+}
+
+.container {
+  width: 96%;
+  margin: 1rem auto;
+}
+
+.card {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.card div:first-child {
+  flex-basis: 35%;
+}
+
+.card div:last-child {
+  flex-basis: 65%;
+  padding: 0 0.5rem 0.25rem;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.card p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.shadow {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.border {
+  border: 1px solid #ddd;
+}
+
+.curve {
+  border-radius: 0.35rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 60%;
+  }
+
+  .card div:first-child {
+    flex-basis: 30%;
+  }
+
+  .card div:last-child {
+    flex-basis: 70%;
+  }
+}
+
+            </style>
+        </head>
+        <body>
+            <center><b><h1>Why Us?</h1></b></center>
+            <center><b><h2>We Make Lives Simpler by Giving You More Free Time</h2></b></center>
+
+
+            <main>
+                <div class="container">
+                
+                  <article class="card shadow">
+                    <div>
+                      <img src="wyus11.jfif" alt="image">
+                    </div>
+              
+                    <div>
+                      <p><strong>Eco-Friendly</strong></p>
+                      <span>
+                     <p>Our front loading machines consume 3 times less water than the conventional washing machines</p>
+                       </span>
+                    </div>
+                  </article>
+                  
+                   
+               
+                  <article class="card border">
+                    <div>
+                      <img src="wyus22.jpg" alt="image">
+                    </div>
+              
+                    <div>
+                      <p><strong>Convenience</strong></p>
+                      <span>
+                     <p>
+                        We schedule pickup and drop as per your convenience.
+                     </p>
+                    </div>
+                  </article>
+                  
+               
+                   
+                
+                  <article class="card shadow curve">
+                    <div>
+                      <img src="wyus33.jpg" alt="image">
+                    </div>
+              
+                    <div>
+                      <p><strong>Quality</strong></p>
+                      <span>
+                       <p>We use products that revive your clothes and give a new feel to them.</p>
+                       </span>
+                    </div>
+                  </article>
+
+
+
+                  <article class="card border">
+                    <div>
+                      <img src="wyus444.png" alt="image">
+                    </div>
+              
+                    <div>
+                      <p><strong>Affordable</strong></p>
+                      <span>
+                        <p>
+                            The amount we charge is equivalent to the cost you bear to get the laundry done at your home.
+                            </p>
+                       </span>
+                    </div>
+                  </article>
+
+
+
+                  <article class="card border">
+                    <div>
+                      <img src="wyus55.jfif" alt="image">
+                    </div>
+              
+                    <div>
+                      <p><strong>Packaging</strong></p>
+                      <span>
+                        <p> Your clothes are delivered at your doorstep with the perfect crease.</p>
+                       </span>
+                    </div>
+                  </article>
+                  
+                   
+               
+                  <article class="card border curve">
+                    <div>
+                      <img src="wyus66.jpg" alt="image">
+                    </div>
+              
+                    <div>
+                      <p><strong>Community</strong></p>
+                      <span>
+                        <p>We collect your donated clothes and spread your love & care to the needy ones.</p>
+                       </span>
+                    </div>
+                  </article>
+                  
+                </div>
+              </main>
+            <script>
+                $('.card').on('click',function(){
+  $(this).fadeOut(500)
+  
+});
+            </script>
+        </body>
+    </html>

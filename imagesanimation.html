@@ -1,0 +1,238 @@
+<html>
+
+<head>
+  <title>images animation</title>
+  <style>
+    @keyframes slidy {
+      0% {
+        left: 0%;
+      }
+
+      20% {
+        left: 0%;
+      }
+
+      25% {
+        left: -100%;
+      }
+
+      45% {
+        left: -100%;
+      }
+
+      50% {
+        left: -200%;
+      }
+
+      70% {
+        left: -200%;
+      }
+
+      75% {
+        left: -300%;
+      }
+
+      95% {
+        left: -300%;
+      }
+
+      100% {
+        left: -400%;
+      }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: arial;
+    }
+
+    div#slider {
+      overflow: hidden;
+      position: relative;
+     text-align: center;
+     color: white;
+    }
+
+    div#slider figure img {
+      width: 20%;
+      float: left;
+    }
+
+    div#slider figure {
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 20s slidy infinite;
+    }
+
+
+    .one-list {
+      z-index: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .one {
+      margin: 30px auto;
+      width: 200px;
+      height: 250px;
+      border-radius: 40px;
+      box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+      cursor: pointer;
+      transition: 0.4s;
+    }
+
+    .one .one_image {
+      width: inherit;
+      height: inherit;
+      border-radius: 40px;
+    }
+
+    .one .one_image img {
+      width: inherit;
+      height: inherit;
+      border-radius: 40px;
+      object-fit: cover;
+    }
+
+    .one .one_title {
+      text-align: center;
+      border-radius: 0px 0px 40px 40px;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+      margin-top: -80px;
+      height: 40px;
+    }
+
+    .one:hover {
+      transform: scale(0.9, 0.9);
+      box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+        -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+    }
+
+    .title-white {
+      color: white;
+    }
+
+    .title-black {
+      color: black;
+    }
+
+    @media all and (max-width: 500px) {
+      .one-list {
+
+        flex-direction: column;
+      }
+    }
+
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+  </style>
+</head>
+
+<body>
+
+
+  <div id="slider">
+   
+    <figure>
+     <div class="container">
+      <img src="d12.jpg" alt>
+      <div class="centered">Centered</div>  
+      <img src="d16.jpg" alt>
+      <img src="d14.jpg" alt>
+
+      <img src="d8.jfif" alt>
+      <img src="d15.jpg" alt>
+      
+
+    </figure>
+    </div>
+  </div>
+
+  <center><b>
+    <br>
+      <h1>How It Works</h1>
+    </b>
+    <br>
+    <h2>Washing Clothes was never so Convenient</h2>
+  </center><br><br><br>
+  <div class="one-list">
+
+    <div class="one 1">
+      <div class="one_image"> <img src="d1.jfif" /> </div>
+      <div class="one_title title-white">
+
+      </div><br><br>
+      <p>
+        <h2>Place order.</h2> Go to our laundry app or website and schedule your wash as per your convenience. We will
+        take it from there. Hassel free, fast and simple!
+      </p>
+    </div>
+
+    <div class="one 2">
+      <div class="one_image">
+        <img src="d7.jpg" />
+      </div>
+      <div class="one_title title-white">
+
+      </div><br><br>
+      <p>
+        <h2>Pick up</h2> Go to our laundry app or website and schedule your wash as per your convenience. We will take
+        it from there. Hassel free, fast and simple!
+      </p>
+    </div>
+
+    <div class="one 3">
+      <div class="one_image">
+        <img src="d6.jpg" />
+      </div>
+      <div class="one_title">
+
+      </div><br><br>
+      <p>
+        <h2>Wash and Iron</h2> We take dirt very seriously. Our experts, with the help of our state of art machinery
+        ensure that your clothes come back looking clean, tidier and fresh every time.
+      </p>
+    </div>
+
+    <div class="one 4">
+      <div class="one_image">
+        <img src="d9.jpg" />
+      </div>
+      <div class="one_title title-black">
+
+      </div><br><br>
+      <div>
+        <p>
+          <h2>Delivery.</h2>Your clothes will be delivered at your doorstep on time and as fresh as daisy. Now getting
+          your laundry done is that convenient.
+        </p>
+      </div>
+      <div>
+      </div>
+
+    </div>
+    <br>
+    <br><br>
+    <br>
+    <br>
+</body>
+
+</html>
